@@ -2,3 +2,6 @@
 
 # send when player try to use totem
 totem-disable-message: "§4Totem is disabled on this server!"
+
+# send when player try to use elytra
+elytra-disable-message: "§4Elytra is disabled on this server!"

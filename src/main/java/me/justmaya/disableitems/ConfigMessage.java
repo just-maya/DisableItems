@@ -20,8 +20,8 @@ public class ConfigMessage {
     }
 
     // send to the player that tnt explosion is disabled
-    public void TNTDisableMessage(Player p) {
-        String message = config.getString("tnt-disable-message");
+    public void ElytraDisableMessage(Player p) {
+        String message = config.getString("elytra-disable-message");
 
         assert message != null;
         p.sendMessage(message);

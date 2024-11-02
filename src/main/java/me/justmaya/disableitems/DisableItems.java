@@ -1,5 +1,6 @@
 package me.justmaya.disableitems;
 
+import me.justmaya.disableitems.events.ElytraMovementEvent;
 import me.justmaya.disableitems.events.TNTExplosionEvent;
 import me.justmaya.disableitems.events.TotemUseEvent;
 import org.bukkit.Bukkit;
@@ -18,5 +19,6 @@ public final class DisableItems extends JavaPlugin {
     private void registerEvents() {
         Bukkit.getServer().getPluginManager().registerEvents(new TotemUseEvent(this), this);
         Bukkit.getServer().getPluginManager().registerEvents(new TNTExplosionEvent(), this);
+        Bukkit.getServer().getPluginManager().registerEvents(new ElytraMovementEvent(this), this);
     }
 }
