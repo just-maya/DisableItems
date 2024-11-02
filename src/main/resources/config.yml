@@ -1,3 +1,4 @@
 # the DisableItems configuration file
 
+# send when player try to use totem
 totem-disable-message: "§4Totem is disabled on this server!"

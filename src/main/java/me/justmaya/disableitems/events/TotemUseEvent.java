@@ -7,17 +7,17 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.entity.EntityResurrectEvent;
 
-public class DisableTotem implements Listener {
+public class TotemUseEvent implements Listener {
     private final DisableItems plugin;
 
-    public DisableTotem(DisableItems plugin) {
+    public TotemUseEvent(DisableItems plugin) {
         this.plugin = plugin;
     }
 
     @EventHandler
     public void onTotemUse(EntityResurrectEvent e) {
         if (e.getEntity() instanceof Player && !e.isCancelled()) {
-            // disable the totem
+            // disable totem use
             e.setCancelled(true);
 
             ConfigMessage c = new ConfigMessage(plugin);

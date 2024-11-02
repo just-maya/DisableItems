@@ -11,9 +11,17 @@ public class ConfigMessage {
         this.config = plugin.getConfig();
     }
 
-    // send to the player that the totem is disabled
+    // send to the player that totem is disabled
     public void TotemDisableMessage(Player p) {
         String message = config.getString("totem-disable-message");
+
+        assert message != null;
+        p.sendMessage(message);
+    }
+
+    // send to the player that tnt explosion is disabled
+    public void TNTDisableMessage(Player p) {
+        String message = config.getString("tnt-disable-message");
 
         assert message != null;
         p.sendMessage(message);

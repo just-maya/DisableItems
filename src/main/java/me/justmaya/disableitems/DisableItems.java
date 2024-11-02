@@ -1,6 +1,7 @@
 package me.justmaya.disableitems;
 
-import me.justmaya.disableitems.events.DisableTotem;
+import me.justmaya.disableitems.events.TNTExplosionEvent;
+import me.justmaya.disableitems.events.TotemUseEvent;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -15,6 +16,7 @@ public final class DisableItems extends JavaPlugin {
     }
 
     private void registerEvents() {
-        Bukkit.getServer().getPluginManager().registerEvents(new DisableTotem(this), this);
+        Bukkit.getServer().getPluginManager().registerEvents(new TotemUseEvent(this), this);
+        Bukkit.getServer().getPluginManager().registerEvents(new TNTExplosionEvent(), this);
     }
 }
