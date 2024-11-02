@@ -1,0 +1,4 @@
+name: DisableItems
+version: '${project.version}'
+main: me.justmaya.disableitems.DisableItems
+api-version: 1.20
