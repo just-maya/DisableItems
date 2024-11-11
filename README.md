@@ -6,3 +6,4 @@
 - Elytra flying
 
 You can add custom messages in the `config.yml` to notify players when they try to use these items.
+
